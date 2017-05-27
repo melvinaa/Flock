@@ -13,6 +13,8 @@
 		200038951EDA071800D5853E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200038931EDA071800D5853E /* Main.storyboard */; };
 		200038971EDA071800D5853E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200038961EDA071800D5853E /* Assets.xcassets */; };
 		2000389A1EDA071800D5853E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200038981EDA071800D5853E /* LaunchScreen.storyboard */; };
+		20FAFEB31EDA196400053FA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20FAFEB21EDA196400053FA5 /* GoogleService-Info.plist */; };
+		6666DC49B7E59B762B06C8BA /* Pods_Flock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E689524C11762F53B3D2E /* Pods_Flock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		200038961EDA071800D5853E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		200038991EDA071800D5853E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2000389B1EDA071800D5853E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FAFEB21EDA196400053FA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4191B5372A795D1BDF14EDE2 /* Pods-Flock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flock/Pods-Flock.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0E689524C11762F53B3D2E /* Pods_Flock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65C5C12AFA4439481FFC09 /* Pods-Flock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flock/Pods-Flock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6666DC49B7E59B762B06C8BA /* Pods_Flock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2000388C1EDA071800D5853E /* Flock */,
 				2000388B1EDA071800D5853E /* Products */,
+				C8B56414155151D48B5A3D43 /* Pods */,
+				A409083790F57A54BB2CE393 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,57 @@
 		2000388C1EDA071800D5853E /* Flock */ = {
 			isa = PBXGroup;
 			children = (
+				201935DE1EDA23CE0048E8E5 /* Model */,
+				201935E01EDA23DD0048E8E5 /* View */,
+				201935DF1EDA23D50048E8E5 /* Controller */,
 				2000388D1EDA071800D5853E /* AppDelegate.swift */,
-				2000388F1EDA071800D5853E /* FirstViewController.swift */,
-				200038911EDA071800D5853E /* SecondViewController.swift */,
 				200038931EDA071800D5853E /* Main.storyboard */,
 				200038961EDA071800D5853E /* Assets.xcassets */,
 				200038981EDA071800D5853E /* LaunchScreen.storyboard */,
 				2000389B1EDA071800D5853E /* Info.plist */,
+				20FAFEB21EDA196400053FA5 /* GoogleService-Info.plist */,
 			);
 			path = Flock;
+			sourceTree = "<group>";
+		};
+		201935DE1EDA23CE0048E8E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		201935DF1EDA23D50048E8E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2000388F1EDA071800D5853E /* FirstViewController.swift */,
+				200038911EDA071800D5853E /* SecondViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		201935E01EDA23DD0048E8E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A409083790F57A54BB2CE393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0E689524C11762F53B3D2E /* Pods_Flock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8B56414155151D48B5A3D43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4191B5372A795D1BDF14EDE2 /* Pods-Flock.debug.xcconfig */,
+				EE65C5C12AFA4439481FFC09 /* Pods-Flock.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2000389E1EDA071800D5853E /* Build configuration list for PBXNativeTarget "Flock" */;
 			buildPhases = (
+				248B5612D8623280D1D6D5A1 /* [CP] Check Pods Manifest.lock */,
 				200038861EDA071800D5853E /* Sources */,
 				200038871EDA071800D5853E /* Frameworks */,
 				200038881EDA071800D5853E /* Resources */,
+				68D69B713CD4ED26D3D011D7 /* [CP] Embed Pods Frameworks */,
+				0A5C069CE6519D2F20FA5542 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +181,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				2000389A1EDA071800D5853E /* LaunchScreen.storyboard in Resources */,
+				20FAFEB31EDA196400053FA5 /* GoogleService-Info.plist in Resources */,
 				200038971EDA071800D5853E /* Assets.xcassets in Resources */,
 				200038951EDA071800D5853E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5C069CE6519D2F20FA5542 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flock/Pods-Flock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		248B5612D8623280D1D6D5A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68D69B713CD4ED26D3D011D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flock/Pods-Flock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		200038861EDA071800D5853E /* Sources */ = {
@@ -260,6 +363,7 @@
 		};
 		2000389F1EDA071800D5853E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4191B5372A795D1BDF14EDE2 /* Pods-Flock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flock/Info.plist;
@@ -272,6 +376,7 @@
 		};
 		200038A01EDA071800D5853E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE65C5C12AFA4439481FFC09 /* Pods-Flock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flock/Info.plist;
@@ -301,6 +406,7 @@
 				200038A01EDA071800D5853E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
